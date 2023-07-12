@@ -1,0 +1,30 @@
+.left{
+    height:300px;
+    width: 300px;
+    background-color: #c2e5e3;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.center{
+    float:center;
+    position: relative;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.bottom{
+    margin-top: 300px;
+    font-size: 40px;
+}
+
+.border{
+    border-radius: 10px;
+    border-color:black;
+    border-style: solid;
+    border-width: 2px;
+}
