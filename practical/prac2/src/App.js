@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Contact from './Components/Contact/Contact';
-import {BrowserRouter,Route,Routes} from 'react-router-dom';
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
+import Contact from "./Components/Pages/Contact";
+import Pagenotfound from "./Components/Pages/PageNotFound";
 function App() {
- return(
- <div> 
- <BrowserRouter>
- <Routes>
-  <Route exact path="/" element={<Home/>}/>
-  <Route exact path="/About" element={<About/>}/>
-  <Route exact path="/Contact" element={<Contact/>}/>
- </Routes>
- </BrowserRouter>
- </div>
- )
- }
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Pagenotfound />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
 
 export default App;
